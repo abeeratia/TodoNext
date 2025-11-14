@@ -1,28 +1,28 @@
 "use client";
 
-import { useRouter } from "next/router";
-import { useState } from "react";
+// import { useRouter } from "next/router";
+// import { useState } from "react";
 
-function AddToodo() {
-  const router = useRouter();
-  const [todo, setTodo] = useState({ title: "", author: "" });
+// function AddToodo() {
+//   const router = useRouter();
+//   const [todo, setTodo] = useState({ title: "", author: "" });
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const data = await fetch("http://localhost:3000/api/todos", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(todo),
-    });
-    const res = await data.json();
-    console.log("res", res);
-    setTodo({ title: "", author: "" });
-    router.push("/todos");
-  }
+//   async function handleSubmit(e) {
+//     e.preventDefault();
+//     const data = await fetch("http://localhost:3000/api/todos", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify(todo),
+//     });
+//     const res = await data.json();
+//     console.log("res", res);
+//     setTodo({ title: "", author: "" });
+//     router.push("/todos");
+//   }
 
-  return (
+ /*  return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-amber-300 to-amber-800">
       <form
         onSubmit={handleSubmit}
@@ -78,7 +78,7 @@ function AddToodo() {
         </button>
       </form>
     </div>
-  );
-}
+  ); */
+// }
 
-export default AddToodo;
+// export default AddToodo;
