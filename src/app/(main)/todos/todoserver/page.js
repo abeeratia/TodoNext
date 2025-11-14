@@ -6,7 +6,7 @@ async function TodoServer() {
   console.log("todotodotodotodotodo", todo);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-100 to-amber-200 py-16 px-5">
+    {/* <div className="min-h-screen bg-gradient-to-br from-amber-100 to-amber-200 py-16 px-5">
       <h2 className="text-4xl font-extrabold text-center text-amber-700 mb-10">
         Todo Server 
       </h2>
@@ -32,7 +32,7 @@ async function TodoServer() {
           </p>
         </div>
       )}
-    </div>
+    </div> */}
   );
 }
 

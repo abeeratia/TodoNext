@@ -7,11 +7,11 @@ export async function GET() {
   try {
     const todo = await Todo.find();
     if (todo) {
-      return NextResponse.json({ todo, status: 200, message: "success" });
+return NextResponse.json({ todo, message: "success" }, { status: 200 });
     }
   } catch (error) {
     console.log(error);
-    return NextResponse.json({ error, status: 500 });
+    return NextResponse.json({ error});
   }
 }
 
