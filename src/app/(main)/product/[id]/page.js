@@ -21,12 +21,12 @@ async function getOneProduct(id) {
   }
 }
 
-export async function generateStaticParams() {
-  const products = await getAllData();
-  return products.map((product) => ({
-    id: product.id.toString(),
-  }));
-}
+// export async function generateStaticParams() {
+//   const products = await getAllData();
+//   return products.map((product) => ({
+//     id: product.id.toString(),
+//   }));
+// }
 
 async function ProductDetails({ params }) {
   const {id} = await params;
